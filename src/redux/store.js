@@ -3,7 +3,7 @@ import { reducer } from "./reducer";
 import { incrementCounter } from "./action";
 
 const initState = {
-  count: 1,
+  count: 0,
 };
 
 export const store = createStore(
@@ -16,8 +16,6 @@ store.subscribe(() => {
   console.log("State have changed", store.getState());
 });
 
-const action = incrementCounter(1);
+const action = incrementCounter(0);
 
-store.dispatch(action);
-store.dispatch(action);
-store.dispatch(action);
+
